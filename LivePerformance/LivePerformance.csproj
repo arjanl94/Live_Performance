@@ -46,13 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BestelRepository.cs" />
     <Compile Include="Business\Artikel.cs" />
     <Compile Include="Business\Bestelling.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Voorraadsysteem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Voorraadsysteem.Designer.cs">
+      <DependentUpon>Voorraadsysteem.cs</DependentUpon>
     </Compile>
     <Compile Include="Business\Gebruiker.cs" />
     <Compile Include="Business\Ingrediënt.cs" />
@@ -60,9 +61,20 @@
     <Compile Include="Business\Manager.cs" />
     <Compile Include="Business\Pizza.cs" />
     <Compile Include="Business\Product.cs" />
+    <Compile Include="DAL\GebruikerRepository.cs" />
+    <Compile Include="DAL\IBestelServices.cs" />
+    <Compile Include="DAL\IGebruikerServices.cs" />
+    <Compile Include="DAL\IProductServices.cs" />
+    <Compile Include="DAL\MssqlBestelLogic.cs" />
+    <Compile Include="DAL\MssqlGebruikerLogic.cs" />
+    <Compile Include="DAL\MssqlProductLogic.cs" />
+    <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vorm.cs" />
+    <EmbeddedResource Include="Voorraadsysteem.resx">
+      <DependentUpon>Voorraadsysteem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,9 +97,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LivePerformance
 {
-    public partial class Form1 : Form
+    public partial class Voorraadsysteem : Form
     {
-        public Form1()
+        public Voorraadsysteem()
         {
             InitializeComponent();
         }
