@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LivePerformance
 {
-    public class Ingrediënt
+    public class Ingrediënt:IProduct
     {
         public string Naam { get; set; }
         public decimal Inkoopprijs { get; set; }
@@ -17,6 +17,11 @@ namespace LivePerformance
             Naam = naam;
             Inkoopprijs = inkoopprijs;
             Verkoopprijs = verkoopprijs;
+        }
+
+        public override string ToString()
+        {
+            return $"Naam: {Naam}, Inkoopprijs: {Inkoopprijs}, Verkoopprijs: {Verkoopprijs}";
         }
     }
 }

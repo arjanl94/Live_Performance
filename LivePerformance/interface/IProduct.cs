@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace LivePerformance
 {
-    public enum Vorm
+    public interface IProduct
     {
-        Rond,
-        Vierkant,
-        Driehoek
+        string Naam { get; set; }
+        decimal Inkoopprijs { get; set; }
+        decimal Verkoopprijs { get; set; }
     }
 }

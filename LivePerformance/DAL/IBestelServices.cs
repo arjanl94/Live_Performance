@@ -9,6 +9,6 @@ namespace LivePerformance
     public interface IBestelServices
     {
         List<Bestelling> ListBestellingen();
-        void AddBestelling(Bestelling bestelling);
+        void AddBestelling(int klantnr, int pizzanr, string artikelnm);
     }
 }

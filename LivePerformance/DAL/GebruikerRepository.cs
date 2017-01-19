@@ -11,7 +11,7 @@ namespace LivePerformance
     {
         private IGebruikerServices _gebruikerServices;
 
-        GebruikerRepository(IGebruikerServices gebruikerServices)
+        public GebruikerRepository(IGebruikerServices gebruikerServices)
         {
             _gebruikerServices = gebruikerServices;
         }
@@ -41,9 +41,9 @@ namespace LivePerformance
             return _gebruikerServices.LoginManager(naam, wachtwoord);
         }
 
-        public Klant KlantById(int id)
+        public Klant KlantByNaam(string naam)
         {
-            return _gebruikerServices.KlantById(id);
+            return _gebruikerServices.KlantByNaam(naam);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace LivePerformance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Voorraadsysteem());
+            Application.Run(new Hoofdpagina());
         }
     }
 }

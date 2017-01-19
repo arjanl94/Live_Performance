@@ -1,2 +1,14 @@
 C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\LivePerformance\bin\Debug\LivePerformance.exe.config
 C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\bin\Debug\LivePerformance.exe.config
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\bin\Debug\LivePerformance.exe
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\bin\Debug\LivePerformance.pdb
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Voorraadsysteem.resources
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.csproj.GenerateResource.Cache
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.exe
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.pdb
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Hoofdpagina.resources
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Bestelpagina.resources
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Refresh.resources
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformance\obj\Debug\LivePerformance.Beheer.resources

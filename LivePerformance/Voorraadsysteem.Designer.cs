@@ -38,44 +38,55 @@
             this.tbnaam = new System.Windows.Forms.TextBox();
             this.tbinkoop = new System.Windows.Forms.TextBox();
             this.tbverkoop = new System.Windows.Forms.TextBox();
-            this.gbaddvoorraad = new System.Windows.Forms.GroupBox();
-            this.gbaddvoorraad.SuspendLayout();
+            this.gbaddproduct = new System.Windows.Forms.GroupBox();
+            this.btneditproduct = new System.Windows.Forms.Button();
+            this.btnaddproduct = new System.Windows.Forms.Button();
+            this.tbbtw = new System.Windows.Forms.TextBox();
+            this.lbbtw = new System.Windows.Forms.Label();
+            this.btnshowproduct = new System.Windows.Forms.Button();
+            this.btnshowingredienten = new System.Windows.Forms.Button();
+            this.btnhoofdpagina = new System.Windows.Forms.Button();
+            this.btnsortproduct = new System.Windows.Forms.Button();
+            this.gbaddproduct.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbvoorraad
             // 
             this.lbvoorraad.FormattingEnabled = true;
-            this.lbvoorraad.Location = new System.Drawing.Point(12, 25);
+            this.lbvoorraad.Location = new System.Drawing.Point(12, 46);
             this.lbvoorraad.Name = "lbvoorraad";
             this.lbvoorraad.Size = new System.Drawing.Size(351, 264);
             this.lbvoorraad.TabIndex = 0;
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(369, 25);
+            this.btnadd.Location = new System.Drawing.Point(369, 46);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 1;
-            this.btnadd.Text = "Add";
+            this.btnadd.Text = "Add ";
             this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(369, 54);
+            this.btnedit.Location = new System.Drawing.Point(369, 75);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(75, 23);
             this.btnedit.TabIndex = 2;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnremove
             // 
-            this.btnremove.Location = new System.Drawing.Point(369, 83);
+            this.btnremove.Location = new System.Drawing.Point(369, 104);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(75, 23);
             this.btnremove.TabIndex = 3;
             this.btnremove.Text = "Remove";
             this.btnremove.UseVisualStyleBackColor = true;
+            this.btnremove.Click += new System.EventHandler(this.btnremove_Click);
             // 
             // lbnaam
             // 
@@ -125,35 +136,122 @@
             this.tbverkoop.Size = new System.Drawing.Size(100, 20);
             this.tbverkoop.TabIndex = 9;
             // 
-            // gbaddvoorraad
+            // gbaddproduct
             // 
-            this.gbaddvoorraad.Controls.Add(this.lbnaam);
-            this.gbaddvoorraad.Controls.Add(this.tbverkoop);
-            this.gbaddvoorraad.Controls.Add(this.lbinkoopprijs);
-            this.gbaddvoorraad.Controls.Add(this.tbinkoop);
-            this.gbaddvoorraad.Controls.Add(this.lbverkoopprijs);
-            this.gbaddvoorraad.Controls.Add(this.tbnaam);
-            this.gbaddvoorraad.Location = new System.Drawing.Point(369, 174);
-            this.gbaddvoorraad.Name = "gbaddvoorraad";
-            this.gbaddvoorraad.Size = new System.Drawing.Size(221, 115);
-            this.gbaddvoorraad.TabIndex = 10;
-            this.gbaddvoorraad.TabStop = false;
-            this.gbaddvoorraad.Text = "Add voorraad:";
+            this.gbaddproduct.Controls.Add(this.btneditproduct);
+            this.gbaddproduct.Controls.Add(this.btnaddproduct);
+            this.gbaddproduct.Controls.Add(this.tbbtw);
+            this.gbaddproduct.Controls.Add(this.lbbtw);
+            this.gbaddproduct.Controls.Add(this.lbnaam);
+            this.gbaddproduct.Controls.Add(this.tbverkoop);
+            this.gbaddproduct.Controls.Add(this.lbinkoopprijs);
+            this.gbaddproduct.Controls.Add(this.tbinkoop);
+            this.gbaddproduct.Controls.Add(this.lbverkoopprijs);
+            this.gbaddproduct.Controls.Add(this.tbnaam);
+            this.gbaddproduct.Location = new System.Drawing.Point(369, 163);
+            this.gbaddproduct.Name = "gbaddproduct";
+            this.gbaddproduct.Size = new System.Drawing.Size(231, 161);
+            this.gbaddproduct.TabIndex = 10;
+            this.gbaddproduct.TabStop = false;
+            this.gbaddproduct.Text = "Add product:";
+            this.gbaddproduct.Visible = false;
+            // 
+            // btneditproduct
+            // 
+            this.btneditproduct.Location = new System.Drawing.Point(9, 132);
+            this.btneditproduct.Name = "btneditproduct";
+            this.btneditproduct.Size = new System.Drawing.Size(75, 23);
+            this.btneditproduct.TabIndex = 12;
+            this.btneditproduct.Text = "Edit";
+            this.btneditproduct.UseVisualStyleBackColor = true;
+            this.btneditproduct.UseWaitCursor = true;
+            this.btneditproduct.Click += new System.EventHandler(this.btneditproduct_Click);
+            // 
+            // btnaddproduct
+            // 
+            this.btnaddproduct.Location = new System.Drawing.Point(150, 132);
+            this.btnaddproduct.Name = "btnaddproduct";
+            this.btnaddproduct.Size = new System.Drawing.Size(75, 23);
+            this.btnaddproduct.TabIndex = 11;
+            this.btnaddproduct.Text = "Add";
+            this.btnaddproduct.UseVisualStyleBackColor = true;
+            this.btnaddproduct.UseWaitCursor = true;
+            this.btnaddproduct.Click += new System.EventHandler(this.btnaddproduct_Click);
+            // 
+            // tbbtw
+            // 
+            this.tbbtw.Location = new System.Drawing.Point(107, 101);
+            this.tbbtw.Name = "tbbtw";
+            this.tbbtw.Size = new System.Drawing.Size(100, 20);
+            this.tbbtw.TabIndex = 11;
+            // 
+            // lbbtw
+            // 
+            this.lbbtw.AutoSize = true;
+            this.lbbtw.Location = new System.Drawing.Point(6, 104);
+            this.lbbtw.Name = "lbbtw";
+            this.lbbtw.Size = new System.Drawing.Size(32, 13);
+            this.lbbtw.TabIndex = 10;
+            this.lbbtw.Text = "BTW";
+            // 
+            // btnshowproduct
+            // 
+            this.btnshowproduct.Location = new System.Drawing.Point(12, 17);
+            this.btnshowproduct.Name = "btnshowproduct";
+            this.btnshowproduct.Size = new System.Drawing.Size(75, 23);
+            this.btnshowproduct.TabIndex = 11;
+            this.btnshowproduct.Text = "Producten";
+            this.btnshowproduct.UseVisualStyleBackColor = true;
+            this.btnshowproduct.Click += new System.EventHandler(this.btnshowproduct_Click);
+            // 
+            // btnshowingredienten
+            // 
+            this.btnshowingredienten.Location = new System.Drawing.Point(93, 17);
+            this.btnshowingredienten.Name = "btnshowingredienten";
+            this.btnshowingredienten.Size = new System.Drawing.Size(75, 23);
+            this.btnshowingredienten.TabIndex = 12;
+            this.btnshowingredienten.Text = "Ingrediënten";
+            this.btnshowingredienten.UseVisualStyleBackColor = true;
+            this.btnshowingredienten.Click += new System.EventHandler(this.btnshowingredienten_Click);
+            // 
+            // btnhoofdpagina
+            // 
+            this.btnhoofdpagina.Location = new System.Drawing.Point(505, 12);
+            this.btnhoofdpagina.Name = "btnhoofdpagina";
+            this.btnhoofdpagina.Size = new System.Drawing.Size(131, 23);
+            this.btnhoofdpagina.TabIndex = 13;
+            this.btnhoofdpagina.Text = "Terug naar hoofdpagina";
+            this.btnhoofdpagina.UseVisualStyleBackColor = true;
+            this.btnhoofdpagina.Click += new System.EventHandler(this.btnhoofdpagina_Click);
+            // 
+            // btnsortproduct
+            // 
+            this.btnsortproduct.Location = new System.Drawing.Point(12, 316);
+            this.btnsortproduct.Name = "btnsortproduct";
+            this.btnsortproduct.Size = new System.Drawing.Size(75, 23);
+            this.btnsortproduct.TabIndex = 14;
+            this.btnsortproduct.Text = "Sorteer";
+            this.btnsortproduct.UseVisualStyleBackColor = true;
+            this.btnsortproduct.Click += new System.EventHandler(this.btnsortproduct_Click);
             // 
             // Voorraadsysteem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 315);
-            this.Controls.Add(this.gbaddvoorraad);
+            this.ClientSize = new System.Drawing.Size(648, 343);
+            this.Controls.Add(this.btnsortproduct);
+            this.Controls.Add(this.btnhoofdpagina);
+            this.Controls.Add(this.btnshowingredienten);
+            this.Controls.Add(this.btnshowproduct);
+            this.Controls.Add(this.gbaddproduct);
             this.Controls.Add(this.btnremove);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.lbvoorraad);
             this.Name = "Voorraadsysteem";
             this.Text = "Voorraadsysteem";
-            this.gbaddvoorraad.ResumeLayout(false);
-            this.gbaddvoorraad.PerformLayout();
+            this.gbaddproduct.ResumeLayout(false);
+            this.gbaddproduct.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -170,7 +268,15 @@
         private System.Windows.Forms.TextBox tbnaam;
         private System.Windows.Forms.TextBox tbinkoop;
         private System.Windows.Forms.TextBox tbverkoop;
-        private System.Windows.Forms.GroupBox gbaddvoorraad;
+        private System.Windows.Forms.GroupBox gbaddproduct;
+        private System.Windows.Forms.Button btnaddproduct;
+        private System.Windows.Forms.TextBox tbbtw;
+        private System.Windows.Forms.Label lbbtw;
+        private System.Windows.Forms.Button btnshowproduct;
+        private System.Windows.Forms.Button btnshowingredienten;
+        private System.Windows.Forms.Button btneditproduct;
+        private System.Windows.Forms.Button btnhoofdpagina;
+        private System.Windows.Forms.Button btnsortproduct;
     }
 }
 

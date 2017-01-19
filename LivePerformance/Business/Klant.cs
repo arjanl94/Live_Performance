@@ -22,5 +22,10 @@ namespace LivePerformance
             Naam = naam;
             Adres = adres;
         }
+
+        public override string ToString()
+        {
+            return $"{Naam}, Adres: {Adres}";
+        }
     }
 }

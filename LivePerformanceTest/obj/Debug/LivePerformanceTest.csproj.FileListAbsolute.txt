@@ -1,0 +1,9 @@
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\LivePerformanceTest.dll
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\LivePerformanceTest.pdb
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\LivePerformance.exe
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\LivePerformance.pdb
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\obj\Debug\LivePerformanceTest.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\obj\Debug\LivePerformanceTest.dll
+C:\Users\user\Documents\GitHub\Live_Performance\LivePerformanceTest\obj\Debug\LivePerformanceTest.pdb

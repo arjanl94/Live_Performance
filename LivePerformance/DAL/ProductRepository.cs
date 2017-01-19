@@ -35,6 +35,11 @@ namespace LivePerformance
             return _productServices.ListIngrediënten();
         }
 
+        public List<Ingrediënt> GetIngrediënten(int pizzanr)
+        {
+            return _productServices.GetIngrediënten(pizzanr);
+        }
+
         public void AddArtikel(Artikel artikel)
         {
             _productServices.AddArtikel(artikel);
@@ -63,6 +68,31 @@ namespace LivePerformance
         public void RemovePizza(Pizza pizza)
         {
             _productServices.RemovePizza(pizza);
+        }
+
+        public void AddIngrediënt(Ingrediënt ingrediënt)
+        {
+            _productServices.AddIngrediënt(ingrediënt);
+        }
+
+        public void EditIngrediënt(Ingrediënt ingrediënt)
+        {
+            _productServices.EditIngrediënt(ingrediënt);
+        }
+
+        public void RemoveIngrediënt(Ingrediënt ingrediënt)
+        {
+            _productServices.RemoveIngrediënt(ingrediënt);
+        }
+
+        public void AddPizzaIngrediënten(int pizzanr, string ingrediënt)
+        {
+            _productServices.AddPizzaIngrediënten(pizzanr, ingrediënt);
+        }
+
+        public void RemovePizzaIngrediënten(int pizzanr)
+        {
+            _productServices.RemovePizzaIngrediënten(pizzanr);
         }
     }
 }

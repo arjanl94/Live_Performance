@@ -13,6 +13,6 @@ namespace LivePerformance
         void RemoveKlant(Klant klant);
         void EditKlant(Klant klant);
         Manager LoginManager(string naam, string wachtwoord);
-        Klant KlantById(int id);
+        Klant KlantByNaam(string naam);
     }
 }

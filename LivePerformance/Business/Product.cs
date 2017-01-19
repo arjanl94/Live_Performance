@@ -9,29 +9,36 @@ namespace LivePerformance
     public class Product
     {
         public int Productnr { get; set; }
-        public Pizza Pizza { get; set; }
-        public Artikel Artikel { get; set; }
+        public List<Pizza> Pizzas { get; set; }
+        public List<Artikel> Artikelen { get; set; }
+        public decimal Totaalprijs { get; set; }
 
-        public Product(int nr, Pizza pizza)
+        public Product()
         {
-            Productnr = nr;
-            Pizza = pizza;
+            Pizzas = new List<Pizza>();
+            Artikelen = new List<Artikel>();
         }
 
-        public Product(int nr,Artikel artikel)
+        public void AddArtikel(Artikel artikel)
         {
-            Productnr = nr;
-            Artikel = artikel;
+            Artikelen.Add(artikel);
         }
 
-        public Product(Pizza pizza)
+        public void AddPizza(Pizza pizza)
         {
-            Pizza = pizza;
+            Pizzas.Add(pizza);
         }
 
-        public Product(Artikel artikel)
+        public void TotalPrijs()
         {
-            Artikel = artikel;
+            foreach (var item in Artikelen)
+            {
+                Totaalprijs += item.Verkoopprijs;
+            }
+            foreach (var item in Pizzas)
+            {
+                Totaalprijs += item.Verkoopprijs;
+            }
         }
     }
 }

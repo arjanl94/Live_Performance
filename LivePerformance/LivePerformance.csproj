@@ -46,9 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beheer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer.Designer.cs">
+      <DependentUpon>Beheer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bestelpagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bestelpagina.Designer.cs">
+      <DependentUpon>Bestelpagina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interface\IProduct.cs" />
     <Compile Include="DAL\BestelRepository.cs" />
     <Compile Include="Business\Artikel.cs" />
     <Compile Include="Business\Bestelling.cs" />
+    <Compile Include="Hoofdpagina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoofdpagina.Designer.cs">
+      <DependentUpon>Hoofdpagina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interface\IPizzaBerekening.cs" />
+    <Compile Include="interface\PizzaRondBerekening.cs" />
+    <Compile Include="interface\PizzaDriehoekBerekening.cs" />
+    <Compile Include="interface\PizzaRechthoekBerekening.cs" />
+    <Compile Include="Refresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refresh.Designer.cs">
+      <DependentUpon>Refresh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Voorraadsysteem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,7 +100,19 @@
     <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vorm.cs" />
+    <Compile Include="Business\Vorm.cs" />
+    <EmbeddedResource Include="Beheer.resx">
+      <DependentUpon>Beheer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bestelpagina.resx">
+      <DependentUpon>Bestelpagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoofdpagina.resx">
+      <DependentUpon>Hoofdpagina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refresh.resx">
+      <DependentUpon>Refresh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Voorraadsysteem.resx">
       <DependentUpon>Voorraadsysteem.cs</DependentUpon>
     </EmbeddedResource>

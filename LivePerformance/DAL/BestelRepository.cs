@@ -20,9 +20,9 @@ namespace LivePerformance
             return _bestelServices.ListBestellingen();
         }
 
-        public void AddBestelling(Bestelling bestelling)
+        public void AddBestelling(int klantnr, int pizzanr, string artikelnm)
         {
-            _bestelServices.AddBestelling(bestelling);
+            _bestelServices.AddBestelling(klantnr, pizzanr, artikelnm);
         }
     }
 }
